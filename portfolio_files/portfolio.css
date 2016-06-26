@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 56px;
+    background-color: black;
+
+}
+
+#menu {
+    height: 100%;
+    color: white;
+    display: table;
+    margin-left: 210px;
+
+}
+
+#menu h2 {
+    display: table-cell;
+    vertical-align: middle;
+}
+#container {
+    width: 1600px;
+    min-height: 500px;
+    margin: 0 auto;
+    display: block;
+    z-index: 1;
+}
+
+/*#portfolio {*/
+    /*margin: 0 auto;*/
+/*}*/
+img {
+    width: 100%;
+    height: 300px;
+}
+
+li {
+    list-style: none;
+    /*display: inline-block;*/
+    margin-top: 10px;
+}
+
+#portfolio img:hover{
+    cursor: pointer;
+}
+#overlay {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.7;
+    position: absolute;
+    z-index: 2;
+    margin-top: 0;
+}
+
+#frame {
+    display: none;
+    width: 800px;
+    height: 660px;
+    margin: 60px auto;
+
+    padding: 15px;
+    padding-bottom: 60px;
+    background-color: white;
+    position: fixed;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    /*!!!! fixed 和 margin:0 auto 在一起的时候会失效，必须再加上left: 0;right: 0;*/
+    z-index: 3;
+}
+#frameContainer {
+    width: 800px;
+    height: 600px;
+}
+#frame :hover {
+    cursor: pointer;
+}
+
+
+
+#frame img {
+    width: 770px;
+    height: 570px;
+
+    position: relative;
+    z-index: 1;
+    float: left;
+    margin-right: 30px;
+}
+
+#frameArrow {
+    position: absolute;
+    width: 770px;
+    margin-top: 280px;
+    z-index: 2;
+}
+
+#frameArrow .glyphicon {
+    color: gray;
+    font-size: 40px;
+}
+#frameArrow #leftArrow {
+    opacity: 0.6;
+}
+#frameArrow #rightArrow {
+    float: right;
+    opacity: 0.6;
+}
+
+#description {
+    background-color: white;
+    display: block;
+}
+.category li {
+    width: 50px;
+    text-align: center;
+    display: inline-block;
+}
+.active::after {
+    content: "";
+    left: 100%;
+    display: block;
+    width: 10px;
+    height: 5px;
+    background-color: lime;
+    /*text-align: center;*/
+    margin: 0px auto -5px auto;
+    z-index: 9;
+}

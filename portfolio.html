@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+
+</head>
+<body>
+
+<header>
+    <div id="menu">
+        <h2>jQuery Portfolio</h2>
+    </div>
+    <input type="text" id="search" style="float: right" alt="searching">
+
+</header>
+
+<div id="overlay"></div>
+<div id="frame">
+    <table id="frameArrow">
+        <tbody><tr>
+            <td id="leftArrow" class="glyphicon glyphicon-arrow-left"></td>
+            <td id="rightArrow" class="glyphicon glyphicon-arrow-right"></td>
+        </tr>
+    </tbody></table>
+    <div id="frameContainer"></div>
+    <div id="description">
+        <p></p>
+    </div>
+
+</div>
+<div id="container">
+    <ul class="category">
+        <li>All</li>
+        <li>first</li>
+        <li>second</li>
+    </ul>
+    <ul id="portfolio" class="ui-sortable">
+
+        <li class="col-xs-4 first"><img id="1" src="imgs/1.jpg" alt="img"></li>
+        <li class="col-xs-4 second"><img id="2" src="imgs/2.jpg" alt="img"></li>
+        <li class="col-xs-4 first"><img id="3" src="imgs/3.jpg" alt="img"></li>
+        <li class="col-xs-4 second"><img id="4" src="imgs/4.jpg" alt="img"></li>
+        <li class="col-xs-4 first"><img id="5" src="imgs/5.jpg" alt="img"></li>
+        <li class="col-xs-4 first"><img id="6" src="imgs/6.jpg" alt="img"></li>
+        <li class="col-xs-4 first"><img id="7" src="imgs/7.jpg" alt="img"></li>
+        <li class="col-xs-4 second"><img id="8" src="imgs/8.jpg" alt="img"></li>
+        <li class="col-xs-4 second"><img id="9" src="imgs/9.jpg" alt="img"></li>
+
+
+    </ul>
+</div>
+<script src="./portfolio_files/jquery-1.11.3.js"></script>
+<script src="./portfolio_files/bootstrap.js"></script>
+<script src="./portfolio_files/EventUtil.js"></script>
+<script src="./portfolio_files/jquery-ui.js"></script>
+<script src="js/portfolio.js"></script>
+
+<div id="window-resizer-tooltip" style="display: block;"><a href="http://localhost:8080/javascript/portfolio.html#" title="Edit settings"></a><span class="tooltipTitle">Window size: </span><span class="tooltipWidth" id="winWidth">1920</span> x <span class="tooltipHeight" id="winHeight">1040</span><br><span class="tooltipTitle">Viewport size: </span><span class="tooltipWidth" id="vpWidth">860</span> x <span class="tooltipHeight" id="vpHeight">911</span></div></body></html>
